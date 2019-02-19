@@ -10,65 +10,26 @@ package factorial;
  * @author gerson
  */
 public class Factorial {
-    public static void main (String[]args){
+      public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Factorial");
+        System.out.println(String.format("El factorial de 4 es %d",FactorialN(4)));
+        // System.out.println(""+FactorialN(5));
         
-        System.out.println(String.format ("el factorial de 3 es %d", factorial (3));
-        System.out.println(String.format ("el factorial de 7 es %d", factorial (7));
-        System.out.println(String.format ("el factorial de 35 es %d", factorial (35));
-    
-    }
-        
-            
-        static int factorial
-       
-    while(numero1 !=0)
-        {
-            factorial=factorial * numero1;
-            numero1=numero1 -1;
-        }
-        
-        public class Factorial {
- 
-	public static void main(String[] args) {
-		Scanner entrada=new Scanner(System.in);
- 
-		System.out.print("Indica el numero a calcular su factorial ");
- 
-		int valorCalcular=0;
- 
-		
-		while(valorCalcular<1) {
-			try {
-				
-				valorCalcular=entrada.nextInt();
- 
-				
-				if(valorCalcular<1)
-					System.out.println("El valor tiene que ser superior a 0");
-			}catch(InputMismatchException e) {
-				
-				System.out.println("El valor tiene que ser numerico...");
-				entrada.nextLine();
-			}
-		}
- 
-		long factorial=1L;
-		for(int i=valorCalcular;i>0;i--) {
-			factorial=factorial*i;
-		}
- 
-		System.out.println("El factorial de " + valorCalcular + " es " + factorial);
-	}
- 
-}
-    
-    
-        
-    
     }
     
     
-
- 
-    
+    static int FactorialN(int n)
+    {
+       int acum=1;
+      
+       while(n>0)
+       {
+           acum=acum*n;
+           n--;
+       }
+        n=acum;
+        return n;
 }
+}
+   
