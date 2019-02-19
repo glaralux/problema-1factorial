@@ -11,25 +11,23 @@ package factorial;
  */
 public class Factorial {
       public static void main(String[] args) {
-        // TODO code application logic here
         System.out.println("Factorial");
-        System.out.println(String.format("El factorial de 4 es %d",FactorialN(4)));
-        // System.out.println(""+FactorialN(5));
-        
+        System.out.println(String.format("El factorial de 4 es %d",Fac(4)));
+               
     }
     
     
-    static int FactorialN(int n)
+    static int Fac(int f)
     {
-       int acum=1;
+       int numero=1;
       
-       while(n>0)
+       while(f>0)
        {
-           acum=acum*n;
-           n--;
+           numero=numero*f;
+           f--;
        }
-        n=acum;
-        return n;
+        f=numero;
+        return f;
 }
 }
    
